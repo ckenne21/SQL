@@ -1,0 +1,32 @@
+--Create a grocery store database
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, quantity INTEGER, asile INTEGER);
+
+INSERT INTO store VALUES
+(1, 'Avacado', 1.99, 04, 01),
+(2, 'Tomatoes', 0.76, 06, 01),
+(3, 'Celery', 1.67, 01, 01),
+(4, 'Lemmon', 0.66, 02, 01),
+(5, 'Lettuce', 4.99, 01, 01),
+(6, 'Bread', 3.98, 01, 03),
+(7, 'Pretzles', 2.49, 01, 03),
+(8, 'Cream Cheese', 3.49, 01, 04),
+(9, 'Almond Milk', 6.59, 01, 04),
+(10, 'Shredded Cheese', 3.29, 01, 04),
+(11, 'Eggs', 4.99, 02, 04),
+(12, 'Wine', 25.99, 02, 06),
+(13, 'Napkins', 1.99, 01, 03),
+(14, 'Onions', 0.69, 03, 01);
+SELECT * FROM store;
+
+--display the database ordered by price.
+SELECT * FROM store
+ORDER BY price; 
+
+--display the database ordered by the first 6 items and their price.
+SELECT item, price FROM store
+ORDER BY id, price
+LIMIT 6;
+
+--what is the avg price of items from asile 4? 
+SELECT AVG(price) 'AVG Price/Item' FROM store
+WHERE asile = 4; 
