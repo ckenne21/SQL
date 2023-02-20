@@ -1,3 +1,3 @@
 # all.things.sql
 Welcome to Caitlny's SQL Portfolio!
-Feel free to check out my latest projects! Feedback is much appreciated :)
+My code repository contains examples of various SQL projects I have recently written! Feel free to check them out! - Feedback is much appreciated :)
